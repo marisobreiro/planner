@@ -40,6 +40,6 @@ Acesse a pasta do projeto via terminal e inicialize a aplicação em seguida abr
 - Google Fonts
 
 ## Design
-Design criado utilizando Figma.
+Design criado utilizando [Figma](https://www.figma.com/file/uzNccmJElpUp7jGA2pdrGQ/Planner?node-id=0%3A1)
 
 Interface responsiva para smartphones, tablets e desktops.
