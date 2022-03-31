@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-light day d-flex flex-column justify-content-between">
+    <section class="bg-light day d-flex flex-column justify-content-between mr-3">
         <div class="mx-3">
             <h2 class="subtitle">{{ Weekday }}</h2>
             <div class="d-flex flex-row align-items-center justify-content-between task" v-for="todo in todos" v-bind:key="todo.id">

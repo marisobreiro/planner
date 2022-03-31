@@ -39,7 +39,8 @@ export default {
 <style>
     .day {
         height: 60vh;
-        width: 80vw;
+        width: 20vw;
+        margin-right: 1rem;
         overflow-y: scroll
     }
 

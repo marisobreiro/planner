@@ -19,25 +19,6 @@
             <button class="dbtn" v-on:click="removeTodos()"><i class="far fa-sm fa-trash-alt"></i></button>
         </div>      
     </section>
-    <!-- Modal -->
-    <div class="modal fade" id="task" tabindex="-1" aria-labelledby="task" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="task">Adicionar tarefa</h5>
-                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <input type="text" class="form-control border-dark shadow-none" id="formGroupExampleInput" placeholder="Digite aqui sua próxima tarefa" v-model="text" />
-                    </div>
-                </div>
-                <div class="modal-footer border-top-0">
-                    <button type="button" class="dbtn" v-on:click="addTodo(text)">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </template>
 
 <script>
@@ -50,7 +31,7 @@ export default {
 
     data() {
         return {
-            todos: [{id: 0, text: "Regar plantas"}],
+            todos: [{id: 0, text: ""}],
         }
     },
 
