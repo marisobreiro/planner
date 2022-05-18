@@ -1,27 +1,20 @@
 <template>
-    <section class="bg-light day d-flex flex-column justify-content-between mr-3">
-        <div class="mx-3">
+    <section class="bg-light day d-flex flex-column mr-3">
+        <header>
             <h2 class="subtitle">{{ Weekday }}</h2>
-            <div class="d-flex flex-row align-items-center justify-content-between task" v-for="todo in todos" v-bind:key="todo.id">
-                <div class="d-flex flex-row align-items-center">
-                    <div class="d-flex align-items-center">
-                        <input type="checkbox" class="dinput"><label for="task">{{ todo.text }}</label>
-                    </div>
-                </div>
-                <div class="d-none task__functions">
+        </header>
+        <main class="p-3 d-flex flex-column tasks">
+            <form v-for="todo in todos" v-bind:key="todo.id" class="flex-row task">
+                <input type="checkbox"><label for="task">{{ todo.text }}</label>
+                <!-- <div class="d-none task__functions">
                     <button id="clr"><i class="far fa-sm fa-trash-alt"></i></button>
                     <button id="edt"><i class="far fa-sm fa-edit"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex flex-row justify-content-end pb-2">
-            <form action="">
-                <input type="text" name="" id="inputTask" class="border-0 border-bottom border-dark bg-light mx-2" placeholder="Inserir nova tarefa" v-model="text">
-                <button type="button" class="dbtn" v-on:click="addTodo(text)"><i class="fas fa-sm fa-plus"></i></button>
+                </div> -->
             </form>
-            
-            <button class="dbtn" v-on:click="removeTodos()"><i class="far fa-sm fa-trash-alt"></i></button>
-        </div>      
+        </main>
+        <footer class="align-self-end m-2 day-actions">
+            <button class="btn-dlt" v-on:click="removeTodos()"><i class="far fa-sm fa-trash-alt"></i></button>
+        </footer>
     </section>
 </template>
 
@@ -35,7 +28,7 @@ export default {
 
     data() {
         return {
-            todos: [{id: 1, text: "Regar plantas"}],
+            todos: [{id: 1, text: "Regar plantas"}, {id: 2, text:"Estudar Vue"}],
         }
     },
 
@@ -55,3 +48,9 @@ export default {
     }
 }
 </script>
+
+<style>
+    label {
+        margin-left: 0.5rem;
+    }
+</style>

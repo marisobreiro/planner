@@ -9,9 +9,9 @@ import Weekly from './components/Weekly.vue';
 
 export default {
     components: {
-        Header,
-        Weekly,
-    },
+    Header,
+    Weekly
+},
 }
 </script>
 
@@ -30,10 +30,10 @@ export default {
     .subtitle {
         font-size: 1rem;
         text-align: center;
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
   
-    .dbtn {
+    .btn-dlt {
         background-color: #FFFFFF;
         border: 1px solid #000000;
         color: #000000;
@@ -42,7 +42,11 @@ export default {
         margin-right: 0.5rem;
     }
 
-    .dbtn:hover {
+    .day-actions {
+        height: 20%;
+    }
+
+    .btn-dlt:active, .btn-dlt:hover {
         background-color: #000000;
         color: #FFFFFF;
     }
