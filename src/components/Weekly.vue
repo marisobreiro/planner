@@ -1,14 +1,13 @@
 <template>
-    <section class="container-fluid d-flex flex-row flex-column flex-lg-row justify-content-center align-itens-center p-5">
-        <Day Weekday="Segunda" />
-        <Day Weekday="Terça" />
-        <Day Weekday="Quarta" />
-        <Day Weekday="Quinta" />
-        <Day Weekday="Sexta" />
+    <section class="container-fluid d-flex flex-row flex-column flex-lg-row justify-content-center align-itens-center p-5" v-for="weekday of weekdays" :key="weekday">
+        <Day Weekday={}} />
     </section>
 </template>
 
 <script>
+import weekdays from '../services/weekdays'
+import Weekdays from '../services/weekdays'
+
 import Day from './Day.vue'
 import Weekend from './Weekend.vue'
 
@@ -16,7 +15,18 @@ export default {
     components: {
         Day,
         Weekend,
-    }
+    },
+
+    data() {
+        weekdays = []
+    },
+
+    mounted() {
+        Weekdays.list().then(resp => {
+            console.log(resp.data);
+            this.weekdays = resp.data;
+        })
+    },
 }
 </script>
 

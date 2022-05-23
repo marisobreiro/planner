@@ -1,0 +1,59 @@
+{
+    "weekday": [
+        {
+            "id": 1,
+            "name": "Monday"
+        },
+        {
+            "id": 2,
+            "name": "Tuesday"
+        },
+        {
+            "id": 3,
+            "name": "Wednesday"
+        },
+        { 
+            "id": 4,
+            "name": "Thursday"
+        },
+        {
+            "id": 5,
+            "name": "Friday"
+        }
+    ],
+    "mon-tasks": [
+        {
+            "id": 1,
+            "title": "Regar plantas"
+        },
+        {
+            "id": 2,
+            "title": "Teste"
+        }
+    ],
+    "tue-tasks": [
+        {
+            "id": 1,
+            "title": "Teste tuesday"
+        }
+    ],
+    "wed-tasks": [
+        {
+            "id": 1,
+            "title": "Wend teste"
+        }
+    ],
+    "thr-tasks": [
+        {
+            "id": 1,
+            "title": "Regar plantas"
+        }
+    ],
+    "fri-tasks": [
+        {
+            "id": 1,
+            "title": "AAAAA"
+        }
+    ]
+
+}

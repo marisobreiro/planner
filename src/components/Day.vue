@@ -28,7 +28,7 @@ export default {
 
     data() {
         return {
-            todos: [{id: 1, text: "Regar plantas"}, {id: 2, text:"Estudar Vue"}],
+            todos: [{id: 1, text: "Regar plantas"}, {id: 2, text:"Estudar"}],
         }
     },
 
